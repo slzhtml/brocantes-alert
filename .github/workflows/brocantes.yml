@@ -33,6 +33,7 @@ jobs:
           EMAIL_CC: ${{ secrets.EMAIL_CC }}
           EMAIL_BCC: ${{ secrets.EMAIL_BCC }}
           MAX_DISTANCE_KM: "50"
+          TEST_EMAIL: "true"
         run: python main.py
 
       - name: Sauvegarder l'historique
